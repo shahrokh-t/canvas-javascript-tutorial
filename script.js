@@ -118,7 +118,7 @@ function drawCircle() {
     ctx.fill();
 }
 
-function animate() {
+function update() {
     ctx.clearRect(0, 0, canvas.width, canvas.height)
     drawCircle();
 
@@ -136,11 +136,11 @@ function animate() {
         circle.dy *= -1;
     }
 
-    requestAnimationFrame(animate);
+    requestAnimationFrame(update);
 }
 
-// Uncomment animate() to see that animation!
-// animate();
+// Uncomment update() to see that animation!
+// update();
 
 
 ////////////////////////////////// Animation 2 - Moving Character
